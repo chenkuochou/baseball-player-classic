@@ -1,60 +1,81 @@
-# Baseball Player classic
+# Baseball Player Classic
 
 **Privacy Policy**
 
-Chen Chou built the Baseball Player Classic app as a Free app. This SERVICE is provided by Chen Chou at no cost and is intended for use as is.
+**Effective date:** 2026-09-21 · **Applies to:** version 2.0.0 and later
 
-This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.
+Baseball Player Classic ("the App") is made by Chen-Kuo Chou, an individual developer based in Australia. This policy explains what the App does with information. It replaces the policy that covered versions 1.0.0 and earlier, which described a different app.
 
-If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.
+## Summary
 
-The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which are accessible at Baseball Player Classic unless otherwise defined in this Privacy Policy.
+- There is **no account**. You never give the App a name, an email address or a password, and there is nothing to sign in to.
+- Your collection, your currency and your progress are stored **on your device**, in a database file inside the App's own storage.
+- A compressed copy of that save is kept in **your own iCloud**, using Apple's key-value storage, so that reinstalling the App does not lose what you paid for. That copy is in your Apple Account. The developer cannot read it.
+- The App sends **anonymous, aggregated usage counts** to TelemetryDeck, an analytics service based in Germany. No name, no email, no advertising identifier, and nothing you have typed.
+- The App does **not** show ads, does **not** use tracking as Apple defines it, and does **not** share anything with data brokers.
+- Purchases are handled entirely by **Apple**. The developer never sees your payment details.
 
-**Information Collection and Use**
+## 1. What is stored on your device
 
-For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information. The information that I request will be retained on your device and is not collected by me in any way.
+The App keeps one database file in its own storage containing: which cards you have pulled and how many copies of each, their levels, your coins, gems and shards, your lineup, which campaign stages you have cleared, each banner's guarantee counter, and a log of changes to your balances. This log exists so that a question like "where did my gems go?" has an answer.
 
-**Log Data**
+This file is included in your device's normal iOS backup. Deleting the App deletes it.
 
-I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third-party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.
+## 2. What is stored in your iCloud
 
-**Cookies**
+So that deleting and reinstalling the App does not destroy a collection you have paid for, the App writes a compressed copy of the save — normally under five kilobytes — to Apple's iCloud key-value storage under your own Apple Account. It contains the same game data described in section 1, minus the change log.
 
-Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.
+This is your iCloud, not a server belonging to the developer. Nothing about it reaches the developer, and there is no way for the developer to read it. You can switch iCloud off for the App in iOS Settings, and Settings ▸ Your save inside the App tells you whether a copy exists.
 
-This Service does not use these “cookies” explicitly. However, the app may use third-party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.
+## 3. What is sent to the analytics service
 
-**Service Providers**
+The App uses [TelemetryDeck](https://telemetrydeck.com) so that the developer can tell whether the game is too hard, whether people finish the tutorial, and how the campaign is actually going. This is the complete list of what an event can contain:
 
-I may employ third-party companies and individuals due to the following reasons:
+| Event | What it carries |
+|---|---|
+| App launched | Whether this is a returning player |
+| Tutorial step reached | The step's name |
+| Tutorial finished | Whether it was skipped |
+| Founder pack granted | Nothing |
+| Cards pulled | The banner's name, how many cards, the best rarity, and whether it was the opening guaranteed pull |
+| First Legendary | How many pulls it took |
+| Battle finished | Stage number, won or lost, the margin, and your club's rating **as a five-point band** rather than the exact number |
+| Shop opened | Whether you opened it yourself or ran out of gems |
+| Purchase credited | Which gem pack, its US price tier, and whether it was a first purchase |
 
-*   To facilitate our Service;
-*   To provide the Service on our behalf;
-*   To perform Service-related services; or
-*   To assist us in analyzing how our Service is used.
+Every event also carries the App's version number and the standard device information TelemetryDeck collects: device model, operating system version, and locale.
 
-I want to inform users of this Service that these third parties have access to their Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.
+TelemetryDeck identifies a player by a one-way hash of Apple's "identifier for vendor", computed on your device and salted again when it arrives. It is never sent as a readable identifier, and it cannot be used to contact you or to recognise you in any other app. The purchase event carries the gem pack's planned US price tier and not the amount you were charged, because a local currency is a rough indication of where you are and the App does not want one.
 
-**Security**
+TelemetryDeck processes data in the European Union. Their privacy policy is at <https://telemetrydeck.com/privacy/>.
 
-I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.
+**You can turn all of this off.** Settings ▸ Privacy ▸ Share anonymous usage data. Switching it off stops new events and discards any that have not been sent yet.
 
-**Links to Other Sites**
+## 4. Purchases
 
-This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
+The App sells consumable gem packs. Purchases go through Apple's In-App Purchase system. Apple tells the App that a purchase succeeded and which product it was; the developer never receives your payment card, your Apple Account, your name or your address. Apple's own privacy policy covers the transaction.
 
-**Children’s Privacy**
+The App records which product you bought and when, on your device, so that the first-purchase bonus is not paid twice and so that a purchase interrupted by a crash is delivered rather than lost.
 
-I do not knowingly collect personally identifiable information from children. I encourage all children to never submit any personally identifiable information through the Application and/or Services. I encourage parents and legal guardians to monitor their children's Internet usage and to help enforce this Policy by instructing their children never to provide personally identifiable information through the Application and/or Services without their permission. If you have reason to believe that a child has provided personally identifiable information to us through the Application and/or Services, please contact us. You must also be at least 16 years of age to consent to the processing of your personally identifiable information in your country (in some countries we may allow your parent or guardian to do so on your behalf).
+## 5. Children
 
-**Changes to This Privacy Policy**
+The App is not directed at children under 13 and does not knowingly collect personal information from anyone. There is no account, no profile, no chat, no user-generated content and no way for players to contact each other. The App does contain in-app purchases; if you are a parent, iOS Screen Time can turn those off.
 
-I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.
+## 6. Your choices
 
-This policy is effective as of 2023-07-19
+- **Turn off analytics** — Settings ▸ Privacy, inside the App.
+- **Delete everything on the device** — Settings ▸ Reset everything on this device, inside the App. This is immediate and cannot be undone.
+- **Remove the iCloud copy** — switch iCloud off for the App in iOS Settings, or delete the App.
+- **Ask a question or make a request** — email the address below. Because there is no account, the developer has no way to look you up, which also means there is nothing about you to hand over or erase on request beyond what is described above.
 
-## Support
+## 7. Changes
 
-Questions, bugs or feedback: **contact@chenkuochou.com**
+If this policy changes, the new version is posted here and the effective date above is updated. Material changes will also be noted in the App's release notes.
+
+## 8. Contact
+
+**hello@chenkuochou.com**
 
 ---
+
+*Baseball Player Classic is not affiliated with, endorsed by, or licensed by Major League Baseball or any of its clubs. Every player, club and city in the game is invented.*
